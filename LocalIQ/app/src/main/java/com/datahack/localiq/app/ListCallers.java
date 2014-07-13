@@ -48,7 +48,7 @@ public class ListCallers extends Activity {
 
         ListView listView = (ListView) findViewById(R.id.listView);
         // Assign adapter to ListView
-        listView.setAdapter(dataAdapter);
+        listView.setAdapter(new CustomersAdapter(this));
     }
 
     @Override

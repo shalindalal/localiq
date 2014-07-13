@@ -1,9 +1,6 @@
 package com.datahack.localiq.app.dummy;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Helper class for providing sample content for user interfaces created by
@@ -47,7 +44,12 @@ public class DummyContent {
         public String phoneNumber;
         public String wifi_mac;
         public String bluetooth_uuid;
+        public String called_at;
+        public String visited_at;
 
+        public Customer() {
+
+        }
 
         public Customer(String csv) {
             String[] fields = csv.split(",");
@@ -59,6 +61,8 @@ public class DummyContent {
             this.gender = fields[5];
             this.wifi_mac = fields[8];
             this.bluetooth_uuid = fields[9];
+            this.called_at = "";
+            this.visited_at = "";
         }
 
         @Override
