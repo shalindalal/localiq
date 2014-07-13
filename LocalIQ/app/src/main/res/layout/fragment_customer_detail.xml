@@ -1,0 +1,28 @@
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Customer Name"
+            android:id="@+id/textCustomerName"
+            android:singleLine="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Phone Number"
+            android:id="@+id/textCustomerPhoneNumber"
+            android:singleLine="true"
+            android:phoneNumber="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Address"
+            android:id="@+id/textCustomerAddress"/>
+</LinearLayout>
