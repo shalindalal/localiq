@@ -125,10 +125,12 @@ public class CustomersDB {
         mDb.insertWithOnConflict(SQLITE_TABLE, KEY_VISITED_AT, row, SQLiteDatabase.CONFLICT_IGNORE);
 
 
+        /*
         mCustomersRef.child(customer.name).setValue(customer);
 
         mIndexRef.child(customer.bluetooth_uuid).setValue(customer.name);
         mIndexRef.child(customer.phoneNumber).setValue(customer.name);
+        */
     }
 
     public boolean updateCustomerCall(final String phoneNumber) {
